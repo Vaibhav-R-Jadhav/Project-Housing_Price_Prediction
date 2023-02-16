@@ -22,7 +22,7 @@ def hpp(input_data):
 
 def main():
     # giving a title
-    st.title("Housing Price Prediction WebApp")
+    st.title("Housing Price Prediction System")
 
     # getting the input data from user
     result = 0
