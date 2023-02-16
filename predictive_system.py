@@ -6,7 +6,7 @@ from sklearn.preprocessing import MinMaxScaler
 sc = MinMaxScaler()
 
 loaded_model = pk.load(
-    open("C:/Users/Vaibhav/OneDrive/Documents/Decode/Project-Housing_Price_Prediction/trained_model.sav", "rb"))
+    open("https://github.com/Vaibhav-R-Jadhav/Project-Housing_Price_Prediction/blob/main/trained_model.sav", "rb"))
 
 
 def hpp(input_data):
