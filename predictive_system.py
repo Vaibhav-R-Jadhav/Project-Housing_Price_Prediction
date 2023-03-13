@@ -27,14 +27,14 @@ def main():
     # getting the input data from user
     result = 0
 
-    lstat = st.text_input("% of lower class population around")
-    indus = st.text_input("proportion of non-retail business acres per town")
-    nox = st.text_input("nitric oxides concentration (parts per 10 million)")
-    ptratio = st.text_input("pupil-teacher ratio by town")
-    rm = st.text_input("average number of rooms per dwelling")
-    tax = st.text_input("full-value property-tax rate per $10,000")
-    dis = st.text_input("weighted distances to five city employment centres")
-    age = st.text_input("proportion of owner-occupied units built prior to 1940")
+    lstat = st.number_input("% of lower class population around")
+    indus = st.number_input("proportion of non-retail business acres per town")
+    nox = st.number_input("nitric oxides concentration (parts per 10 million)")
+    ptratio = st.number_input("pupil-teacher ratio by town")
+    rm = st.number_input("average number of rooms per dwelling")
+    tax = st.number_input("full-value property-tax rate per $10,000")
+    dis = st.number_input("weighted distances to five city employment centres")
+    age = st.number_input("proportion of owner-occupied units built prior to 1940")
 
     # code for prediction
 
