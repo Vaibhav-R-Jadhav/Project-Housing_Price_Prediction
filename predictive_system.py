@@ -1,10 +1,9 @@
 import numpy as np
 import pickle as pk
 import streamlit as st
-from sklearn.preprocessing import MinMaxScaler
 
-sc = MinMaxScaler()
-
+scaled_data = pk.load(
+    open("scaled_data.sav", "rb"))
 loaded_model = pk.load(
     open("trained_model.sav", "rb"))
 
@@ -13,7 +12,7 @@ def hpp(input_data):
     # input_data = (4.98, 2.31, 0.538, 15.3, 6.575, 296, 4.09, 65)
     arr = np.asarray(input_data)
     arr = arr.reshape(1, -1)
-    ar = sc.fit_transform(arr)
+    ar = scaled_data.transform(arr)
 
     prediction = loaded_model.predict(ar)
     return(f"The Median value of owner-occupied homes in $1000's is {round(prediction[0],2)}")
