@@ -5,7 +5,7 @@ import streamlit as st
 scaled_data = pk.load(
     open("scaled_data.sav", "rb"))
 loaded_model = pk.load(
-    open("trained_model.sav", "rb"))
+    open("trained_model_svr.sav", "rb"))
 
 
 def hpp(input_data):
